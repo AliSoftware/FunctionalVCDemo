@@ -12,6 +12,7 @@
 		0970E5EC1DDA592700DD12FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0970E5EA1DDA592700DD12FF /* Main.storyboard */; };
 		0970E5EE1DDA592700DD12FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0970E5ED1DDA592700DD12FF /* Assets.xcassets */; };
 		0970E5F11DDA592700DD12FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0970E5EF1DDA592700DD12FF /* LaunchScreen.storyboard */; };
+		47F7836F42E3BB79DDB71325 /* Pods_FunctionalVCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B8AC0C70F849B72596C135 /* Pods_FunctionalVCDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0970E5ED1DDA592700DD12FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0970E5F01DDA592700DD12FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0970E5F21DDA592700DD12FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		246FEADAA00B2FA304B3D2F0 /* Pods-FunctionalVCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunctionalVCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunctionalVCDemo/Pods-FunctionalVCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9242C56C04CFECCC50895B62 /* Pods-FunctionalVCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunctionalVCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunctionalVCDemo/Pods-FunctionalVCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B0B8AC0C70F849B72596C135 /* Pods_FunctionalVCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FunctionalVCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F7836F42E3BB79DDB71325 /* Pods_FunctionalVCDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0970E5E51DDA592700DD12FF /* FunctionalVCDemo */,
 				0970E5E41DDA592700DD12FF /* Products */,
+				C36842E84285D4C6414F4995 /* Pods */,
+				1B120846541CEC4326404B6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = FunctionalVCDemo;
 			sourceTree = "<group>";
 		};
+		1B120846541CEC4326404B6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0B8AC0C70F849B72596C135 /* Pods_FunctionalVCDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C36842E84285D4C6414F4995 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9242C56C04CFECCC50895B62 /* Pods-FunctionalVCDemo.debug.xcconfig */,
+				246FEADAA00B2FA304B3D2F0 /* Pods-FunctionalVCDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0970E5F51DDA592700DD12FF /* Build configuration list for PBXNativeTarget "FunctionalVCDemo" */;
 			buildPhases = (
+				F02DE90D62C3EF5D058B62C4 /* [CP] Check Pods Manifest.lock */,
 				0970E5DF1DDA592700DD12FF /* Sources */,
 				0970E5E01DDA592700DD12FF /* Frameworks */,
 				0970E5E11DDA592700DD12FF /* Resources */,
+				CD822009F26EE8058BBC9938 /* [CP] Embed Pods Frameworks */,
+				BC7A04AD04729998F4781E19 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC7A04AD04729998F4781E19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunctionalVCDemo/Pods-FunctionalVCDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD822009F26EE8058BBC9938 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunctionalVCDemo/Pods-FunctionalVCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F02DE90D62C3EF5D058B62C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0970E5DF1DDA592700DD12FF /* Sources */ = {
@@ -258,6 +333,7 @@
 		};
 		0970E5F61DDA592700DD12FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9242C56C04CFECCC50895B62 /* Pods-FunctionalVCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FunctionalVCDemo/Info.plist;
@@ -270,6 +346,7 @@
 		};
 		0970E5F71DDA592700DD12FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246FEADAA00B2FA304B3D2F0 /* Pods-FunctionalVCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FunctionalVCDemo/Info.plist;
@@ -299,6 +376,7 @@
 				0970E5F71DDA592700DD12FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
