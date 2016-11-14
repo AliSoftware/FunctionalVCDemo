@@ -12,7 +12,7 @@ import RxCocoa
 
 class TextViewController: UIViewController, FunctionalVC, UITextFieldDelegate {
 
-  @IBOutlet private var textField: UITextField!
+  @IBOutlet private weak var textField: UITextField!
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
@@ -20,16 +20,16 @@ class TextViewController: UIViewController, FunctionalVC, UITextFieldDelegate {
   }
 
   private let subject = PublishSubject<String>()
-  @IBAction private func validateAction(_ sender: Any) {
-    subject.on(.next(textField.text ?? ""))
-  }
-
   public var nextObservable: Observable<String> {
     return subject.asObservable()
   }
 
+  @IBAction private func validateAction(_ sender: Any) {
+    subject.onNext(textField.text ?? "")
+  }
+
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-    subject.on(.next(textField.text ?? ""))
+    subject.onNext(textField.text ?? "")
     return false
   }
 }

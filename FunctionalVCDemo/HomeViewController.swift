@@ -23,10 +23,16 @@ class HomeViewController: UIViewController {
   }
 
   @IBAction func askForNumber(_ sender: UIButton) {
-    self.showAlert(title: "Not implemented", message: "Not implemented yet!")
+    let vc = ValueViewController()
+    vc.showModal(on: self)
+      .subscribe(onNext: { (value: Int) in
+        self.showAlert(title: "Value selected", message: "\(value)")
+      })
+      .addDisposableTo(disposeBag)
   }
 
   @IBAction func startTutorial(_ sender: UIButton) {
+    self.showAlert(title: "Not implemented", message: "Not implemented yet!")
   }
 
   private func showAlert(title: String, message: String) {
