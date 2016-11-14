@@ -31,6 +31,16 @@ class HomeViewController: UIViewController {
       .addDisposableTo(disposeBag)
   }
 
+  @IBAction func showFullForm(_ sender: UIButton) {
+    let vc = FormViewController()
+    vc.showModal(on: self)
+      .subscribe(onNext: { formVM in
+        let msg = "\(formVM.firstName) \(formVM.lastName), \(formVM.city)"
+        self.showAlert(title: "Form result", message: msg)
+      })
+    .addDisposableTo(disposeBag)
+  }
+
   @IBAction func startTutorial(_ sender: UIButton) {
     self.showAlert(title: "Not implemented", message: "Not implemented yet!")
   }

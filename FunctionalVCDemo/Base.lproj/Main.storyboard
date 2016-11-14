@@ -37,10 +37,17 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cj2-tW-JMt">
-                                <rect key="frame" x="130" y="272.5" width="114" height="30"/>
+                                <rect key="frame" x="136" y="272.5" width="102" height="30"/>
+                                <state key="normal" title="Show full Form"/>
+                                <connections>
+                                    <action selector="showFullForm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lmr-gp-Wq8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcL-rV-7N7">
+                                <rect key="frame" x="130" y="312.5" width="114" height="30"/>
                                 <state key="normal" title="Tutorial Example"/>
                                 <connections>
-                                    <action selector="startTutorial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FKO-Hk-6Pg"/>
+                                    <action selector="startTutorial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jSH-i3-V81"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -48,9 +55,11 @@
                         <constraints>
                             <constraint firstItem="5lf-3B-Y1n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Crf-Pu-9xG"/>
                             <constraint firstItem="5lf-3B-Y1n" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" multiplier="1:3" id="GwR-GT-Ffk"/>
+                            <constraint firstItem="ZcL-rV-7N7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KqU-MF-hXr"/>
                             <constraint firstItem="cj2-tW-JMt" firstAttribute="top" secondItem="6l1-nB-JtU" secondAttribute="bottom" constant="10" id="S2d-hS-1Xa"/>
                             <constraint firstItem="cj2-tW-JMt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TTk-UC-rmj"/>
                             <constraint firstItem="6l1-nB-JtU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ghx-Km-zm0"/>
+                            <constraint firstItem="ZcL-rV-7N7" firstAttribute="top" secondItem="cj2-tW-JMt" secondAttribute="bottom" constant="10" id="vJj-GL-T4t"/>
                             <constraint firstItem="6l1-nB-JtU" firstAttribute="top" secondItem="5lf-3B-Y1n" secondAttribute="bottom" constant="10" id="vQ0-Rh-3dM"/>
                         </constraints>
                     </view>
