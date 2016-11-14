@@ -19,6 +19,8 @@
 		0970E6031DDA69AF00DD12FF /* ValueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0970E6011DDA69AF00DD12FF /* ValueViewController.xib */; };
 		0970E6061DDA6D0900DD12FF /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970E6041DDA6D0900DD12FF /* FormViewController.swift */; };
 		0970E6071DDA6D0900DD12FF /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0970E6051DDA6D0900DD12FF /* FormViewController.xib */; };
+		09752A701DDA7D370061D990 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09752A6E1DDA7D370061D990 /* TutorialPageViewController.swift */; };
+		09752A711DDA7D370061D990 /* TutorialPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09752A6F1DDA7D370061D990 /* TutorialPageViewController.xib */; };
 		47F7836F42E3BB79DDB71325 /* Pods_FunctionalVCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B8AC0C70F849B72596C135 /* Pods_FunctionalVCDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		0970E6011DDA69AF00DD12FF /* ValueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ValueViewController.xib; sourceTree = "<group>"; };
 		0970E6041DDA6D0900DD12FF /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		0970E6051DDA6D0900DD12FF /* FormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormViewController.xib; sourceTree = "<group>"; };
+		09752A6E1DDA7D370061D990 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
+		09752A6F1DDA7D370061D990 /* TutorialPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialPageViewController.xib; sourceTree = "<group>"; };
 		246FEADAA00B2FA304B3D2F0 /* Pods-FunctionalVCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunctionalVCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunctionalVCDemo/Pods-FunctionalVCDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9242C56C04CFECCC50895B62 /* Pods-FunctionalVCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunctionalVCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunctionalVCDemo/Pods-FunctionalVCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B0B8AC0C70F849B72596C135 /* Pods_FunctionalVCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FunctionalVCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +98,8 @@
 				0970E6011DDA69AF00DD12FF /* ValueViewController.xib */,
 				0970E6041DDA6D0900DD12FF /* FormViewController.swift */,
 				0970E6051DDA6D0900DD12FF /* FormViewController.xib */,
+				09752A6E1DDA7D370061D990 /* TutorialPageViewController.swift */,
+				09752A6F1DDA7D370061D990 /* TutorialPageViewController.xib */,
 			);
 			path = FunctionalVCs;
 			sourceTree = "<group>";
@@ -192,6 +198,7 @@
 				0970E5EE1DDA592700DD12FF /* Assets.xcassets in Resources */,
 				0970E5EC1DDA592700DD12FF /* Main.storyboard in Resources */,
 				0970E6071DDA6D0900DD12FF /* FormViewController.xib in Resources */,
+				09752A711DDA7D370061D990 /* TutorialPageViewController.xib in Resources */,
 				0970E5FD1DDA643D00DD12FF /* TextViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +260,7 @@
 			files = (
 				0970E6061DDA6D0900DD12FF /* FormViewController.swift in Sources */,
 				0970E5E91DDA592700DD12FF /* HomeViewController.swift in Sources */,
+				09752A701DDA7D370061D990 /* TutorialPageViewController.swift in Sources */,
 				0970E6021DDA69AF00DD12FF /* ValueViewController.swift in Sources */,
 				0970E5E71DDA592700DD12FF /* AppDelegate.swift in Sources */,
 				0970E5FB1DDA5B1E00DD12FF /* TextViewController.swift in Sources */,

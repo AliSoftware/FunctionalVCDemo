@@ -42,7 +42,20 @@ class HomeViewController: UIViewController {
   }
 
   @IBAction func startTutorial(_ sender: UIButton) {
-    self.showAlert(title: "Not implemented", message: "Not implemented yet!")
+    let nc = UINavigationController()
+    let vcList = [
+      TutorialPageViewController(title: "Page 1", text: "Welcome!"),
+      TutorialPageViewController(title: "Page 2", text: "Please continue", color: .yellow),
+      TutorialPageViewController(title: "Page 3", text: "Almost there", color: .cyan),
+      TutorialPageViewController(title: "Page 4", text: "Congratulations, you're done!", color: .green)
+    ]
+
+    self.present(nc, animated: true)
+    vcList.chain(on: nc)
+      .subscribe(onCompleted: {
+        self.dismiss(animated: true)
+      })
+      .addDisposableTo(disposeBag)
   }
 
   private func showAlert(title: String, message: String) {

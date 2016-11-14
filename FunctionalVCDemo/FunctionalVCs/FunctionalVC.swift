@@ -24,3 +24,20 @@ extension FunctionalVC where Self: UIViewController {
       })
   }
 }
+
+extension Collection
+  where
+  Self.Iterator.Element: FunctionalVC,
+  Self.Iterator.Element: UIViewController,
+  Self.Iterator.Element.ResultType == Void
+{
+  func chain(on navVC: UINavigationController) -> Observable<Void> {
+    return self.reduce(Observable<Void>.just(), { (acc, fvc) -> Observable<Void> in
+      acc.flatMap({ _ -> Observable<Void> in
+        print("About to push \(fvc) on stack \(navVC.viewControllers)")
+        navVC.pushViewController(fvc, animated: true)
+        return fvc.nextObservable
+      })
+    }).take(1)
+  }
+}
