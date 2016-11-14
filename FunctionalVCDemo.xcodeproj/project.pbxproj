@@ -8,21 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		0970E5E71DDA592700DD12FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970E5E61DDA592700DD12FF /* AppDelegate.swift */; };
-		0970E5E91DDA592700DD12FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970E5E81DDA592700DD12FF /* ViewController.swift */; };
+		0970E5E91DDA592700DD12FF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970E5E81DDA592700DD12FF /* HomeViewController.swift */; };
 		0970E5EC1DDA592700DD12FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0970E5EA1DDA592700DD12FF /* Main.storyboard */; };
 		0970E5EE1DDA592700DD12FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0970E5ED1DDA592700DD12FF /* Assets.xcassets */; };
 		0970E5F11DDA592700DD12FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0970E5EF1DDA592700DD12FF /* LaunchScreen.storyboard */; };
+		0970E5FB1DDA5B1E00DD12FF /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970E5FA1DDA5B1E00DD12FF /* TextViewController.swift */; };
+		0970E5FD1DDA643D00DD12FF /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0970E5FC1DDA643D00DD12FF /* TextViewController.xib */; };
+		0970E5FF1DDA672400DD12FF /* FunctionalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970E5FE1DDA672400DD12FF /* FunctionalVC.swift */; };
 		47F7836F42E3BB79DDB71325 /* Pods_FunctionalVCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B8AC0C70F849B72596C135 /* Pods_FunctionalVCDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0970E5E31DDA592700DD12FF /* FunctionalVCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionalVCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0970E5E61DDA592700DD12FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0970E5E81DDA592700DD12FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0970E5E81DDA592700DD12FF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0970E5EB1DDA592700DD12FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0970E5ED1DDA592700DD12FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0970E5F01DDA592700DD12FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0970E5F21DDA592700DD12FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0970E5FA1DDA5B1E00DD12FF /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		0970E5FC1DDA643D00DD12FF /* TextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
+		0970E5FE1DDA672400DD12FF /* FunctionalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalVC.swift; sourceTree = "<group>"; };
 		246FEADAA00B2FA304B3D2F0 /* Pods-FunctionalVCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunctionalVCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunctionalVCDemo/Pods-FunctionalVCDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9242C56C04CFECCC50895B62 /* Pods-FunctionalVCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunctionalVCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunctionalVCDemo/Pods-FunctionalVCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B0B8AC0C70F849B72596C135 /* Pods_FunctionalVCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FunctionalVCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,13 +68,32 @@
 			isa = PBXGroup;
 			children = (
 				0970E5E61DDA592700DD12FF /* AppDelegate.swift */,
-				0970E5E81DDA592700DD12FF /* ViewController.swift */,
 				0970E5EA1DDA592700DD12FF /* Main.storyboard */,
+				0970E5E81DDA592700DD12FF /* HomeViewController.swift */,
+				0970E5F81DDA5AB200DD12FF /* FunctionalVCs */,
+				0970E5F91DDA5ADD00DD12FF /* Resources */,
+			);
+			path = FunctionalVCDemo;
+			sourceTree = "<group>";
+		};
+		0970E5F81DDA5AB200DD12FF /* FunctionalVCs */ = {
+			isa = PBXGroup;
+			children = (
+				0970E5FE1DDA672400DD12FF /* FunctionalVC.swift */,
+				0970E5FA1DDA5B1E00DD12FF /* TextViewController.swift */,
+				0970E5FC1DDA643D00DD12FF /* TextViewController.xib */,
+			);
+			path = FunctionalVCs;
+			sourceTree = "<group>";
+		};
+		0970E5F91DDA5ADD00DD12FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				0970E5ED1DDA592700DD12FF /* Assets.xcassets */,
 				0970E5EF1DDA592700DD12FF /* LaunchScreen.storyboard */,
 				0970E5F21DDA592700DD12FF /* Info.plist */,
 			);
-			path = FunctionalVCDemo;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		1B120846541CEC4326404B6D /* Frameworks */ = {
@@ -153,6 +178,7 @@
 				0970E5F11DDA592700DD12FF /* LaunchScreen.storyboard in Resources */,
 				0970E5EE1DDA592700DD12FF /* Assets.xcassets in Resources */,
 				0970E5EC1DDA592700DD12FF /* Main.storyboard in Resources */,
+				0970E5FD1DDA643D00DD12FF /* TextViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,8 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0970E5E91DDA592700DD12FF /* ViewController.swift in Sources */,
+				0970E5E91DDA592700DD12FF /* HomeViewController.swift in Sources */,
 				0970E5E71DDA592700DD12FF /* AppDelegate.swift in Sources */,
+				0970E5FB1DDA5B1E00DD12FF /* TextViewController.swift in Sources */,
+				0970E5FF1DDA672400DD12FF /* FunctionalVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
