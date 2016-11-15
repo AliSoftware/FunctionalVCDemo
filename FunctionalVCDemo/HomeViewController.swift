@@ -44,8 +44,8 @@ class HomeViewController: UIViewController {
   @IBAction func startTutorial(_ sender: UIButton) {
     let nc = UINavigationController()
     let vcList = [
-      TutorialPageViewController(title: "Page 1", text: "Welcome!"),
-      TutorialPageViewController(title: "Page 2", text: "Please continue", color: .yellow),
+      TutorialPageViewController(title: "Page 1", text: "Welcome!", color: .yellow),
+      TutorialPageViewController(title: "Page 2", text: "Please continue", color: .orange),
       TutorialPageViewController(title: "Page 3", text: "Almost there", color: .cyan),
       TutorialPageViewController(title: "Page 4", text: "Congratulations, you're done!", color: .green)
     ]

@@ -30,6 +30,7 @@ class TutorialPageViewController: UIViewController, Nextable {
   var nextObservable: Observable<Void> {
     return nextButton.rx.tap
       .debounce(0.5, scheduler: MainScheduler.instance)
+      .debug("Tap \(nextButton) (\(self.title ?? ""))")
       .asObservable()
   }
 
@@ -43,6 +44,6 @@ class TutorialPageViewController: UIViewController, Nextable {
 
 extension TutorialPageViewController {
   override var description: String {
-    return "<TutorialPage \(self.title)>"
+    return "<TutorialPage ”\(self.title ?? "")“>"
   }
 }
