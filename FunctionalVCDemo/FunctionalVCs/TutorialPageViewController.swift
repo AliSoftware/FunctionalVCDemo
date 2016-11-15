@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-class TutorialPageViewController: UIViewController, FunctionalVC {
+class TutorialPageViewController: UIViewController, Nextable {
 
   private let text: String
   private let color: UIColor

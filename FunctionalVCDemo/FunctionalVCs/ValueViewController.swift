@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 
 
-class ValueViewController: UIViewController, FunctionalVC {
+class ValueViewController: UIViewController, Nextable {
 
   @IBOutlet private weak var stepper: UIStepper!
   @IBOutlet private weak var valueLabel: UILabel!

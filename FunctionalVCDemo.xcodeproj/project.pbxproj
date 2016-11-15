@@ -14,7 +14,7 @@
 		0970E5F11DDA592700DD12FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0970E5EF1DDA592700DD12FF /* LaunchScreen.storyboard */; };
 		0970E5FB1DDA5B1E00DD12FF /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970E5FA1DDA5B1E00DD12FF /* TextViewController.swift */; };
 		0970E5FD1DDA643D00DD12FF /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0970E5FC1DDA643D00DD12FF /* TextViewController.xib */; };
-		0970E5FF1DDA672400DD12FF /* FunctionalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970E5FE1DDA672400DD12FF /* FunctionalVC.swift */; };
+		0970E5FF1DDA672400DD12FF /* Nextable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970E5FE1DDA672400DD12FF /* Nextable.swift */; };
 		0970E6021DDA69AF00DD12FF /* ValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970E6001DDA69AF00DD12FF /* ValueViewController.swift */; };
 		0970E6031DDA69AF00DD12FF /* ValueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0970E6011DDA69AF00DD12FF /* ValueViewController.xib */; };
 		0970E6061DDA6D0900DD12FF /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970E6041DDA6D0900DD12FF /* FormViewController.swift */; };
@@ -34,7 +34,7 @@
 		0970E5F21DDA592700DD12FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0970E5FA1DDA5B1E00DD12FF /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		0970E5FC1DDA643D00DD12FF /* TextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
-		0970E5FE1DDA672400DD12FF /* FunctionalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalVC.swift; sourceTree = "<group>"; };
+		0970E5FE1DDA672400DD12FF /* Nextable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nextable.swift; sourceTree = "<group>"; };
 		0970E6001DDA69AF00DD12FF /* ValueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueViewController.swift; sourceTree = "<group>"; };
 		0970E6011DDA69AF00DD12FF /* ValueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ValueViewController.xib; sourceTree = "<group>"; };
 		0970E6041DDA6D0900DD12FF /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		0970E5F81DDA5AB200DD12FF /* FunctionalVCs */ = {
 			isa = PBXGroup;
 			children = (
-				0970E5FE1DDA672400DD12FF /* FunctionalVC.swift */,
+				0970E5FE1DDA672400DD12FF /* Nextable.swift */,
 				0970E5FA1DDA5B1E00DD12FF /* TextViewController.swift */,
 				0970E5FC1DDA643D00DD12FF /* TextViewController.xib */,
 				0970E6001DDA69AF00DD12FF /* ValueViewController.swift */,
@@ -264,7 +264,7 @@
 				0970E6021DDA69AF00DD12FF /* ValueViewController.swift in Sources */,
 				0970E5E71DDA592700DD12FF /* AppDelegate.swift in Sources */,
 				0970E5FB1DDA5B1E00DD12FF /* TextViewController.swift in Sources */,
-				0970E5FF1DDA672400DD12FF /* FunctionalVC.swift in Sources */,
+				0970E5FF1DDA672400DD12FF /* Nextable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

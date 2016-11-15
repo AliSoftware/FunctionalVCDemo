@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-class FormViewController: UIViewController, FunctionalVC, UITextFieldDelegate {
+class FormViewController: UIViewController, Nextable, UITextFieldDelegate {
 
   struct ViewModel {
     let firstName: String

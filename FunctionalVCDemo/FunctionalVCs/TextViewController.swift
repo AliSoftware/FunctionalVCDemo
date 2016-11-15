@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class TextViewController: UIViewController, FunctionalVC, UITextFieldDelegate {
+class TextViewController: UIViewController, Nextable, UITextFieldDelegate {
 
   @IBOutlet private weak var textField: UITextField!
 

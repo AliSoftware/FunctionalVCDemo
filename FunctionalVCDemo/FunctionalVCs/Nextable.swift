@@ -1,5 +1,5 @@
 //
-//  FunctionalVC.swift
+//  Nextable.swift
 //  FunctionalVCDemo
 //
 //  Created by Olivier Halligon on 14/11/2016.
@@ -8,14 +8,12 @@
 
 import RxSwift
 
-protocol FunctionalVC {
+protocol Nextable {
   associatedtype ResultType
   var nextObservable: Observable<ResultType> { get }
-
-  func showModal(on presentingVC: UIViewController) -> Observable<Self.ResultType>
 }
 
-extension FunctionalVC where Self: UIViewController {
+extension Nextable where Self: UIViewController {
   func showModal(on presentingVC: UIViewController) -> Observable<Self.ResultType> {
     presentingVC.present(self, animated: true)
     return self.nextObservable.take(1)
@@ -27,11 +25,17 @@ extension FunctionalVC where Self: UIViewController {
 
 extension Collection
   where
-  Self.Iterator.Element: FunctionalVC,
+  Self.Iterator.Element: Nextable,
   Self.Iterator.Element: UIViewController,
   Self.Iterator.Element.ResultType == Void
 {
+  /// Build a chain just().flatMap(fvc1.nextObservable).flatMap(fvc2.nextObservable)….flatMap(fvcN.nextObservable).take(1)
+  /// from an array of Nextables, pushing the fvcX on the NavigationController on each step.
+  ///
+  /// Returns an Observable<Void> emiting one `.next` + `.completed` once the use hits "Next" on the last screen.
   func chain(on navVC: UINavigationController) -> Observable<Void> {
+    // Note: take(1) is there so that the `.next` emited by the last FVC at the end of the chain
+    // is followed by a `.completed` event to signal the end of the chain.
     return self.reduce(Observable<Void>.just(), { (acc, fvc) -> Observable<Void> in
       acc.flatMap({ _ -> Observable<Void> in
         print("About to push \(fvc) on stack \(navVC.viewControllers)")
